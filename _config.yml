@@ -1,0 +1,43 @@
+# Site settings
+title: Improvizja Gallery
+email: your-email@example.com
+description: >- 
+  This is your site's description. You can put a longer description here.
+baseurl: "" # the subpath of your site, e.g. /blog if your site is at example.com/blog
+url: "https://improwizja.github.io/Improvizja" # the base hostname & protocol for your site
+theme: jekyll-theme-primer # or the theme you are using
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude these files and folders from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include these files and folders in processing
+include:
+  - _pages
+
+# Markdown processing options
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  guess_lang: true
+  syntax_highlighter: rouge
+
+# Deployment settings
+github:
+  repository: improvizja/Improvizja
