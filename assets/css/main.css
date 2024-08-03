@@ -2047,4 +2047,11 @@ input, select, textarea {
 
 		#footer .copyright a {
 			color: inherit;
-		}
+		}.thumb h2, .thumb p {
+    display: none; /* Ukrycie tytułów i opisów */
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+}
