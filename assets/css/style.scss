@@ -1,1 +1,103 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+
+/* Variables */
+$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.75;
+$primary-color: #33c3f0;
+$secondary-color: #ff5722;
+$body-bg: #fff;
+$text-color: #333;
+$link-color: $primary-color;
+$link-hover-color: darken($primary-color, 15%);
+$border-color: #eaeaea;
+
+/* Global Styles */
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $body-bg;
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px dotted $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+    border-bottom: 1px solid $link-hover-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  border-left: 5px solid $border-color;
+  padding-left: 1.5rem;
+  color: darken($text-color, 15%);
+  font-style: italic;
+}
+
+code {
+  background: $border-color;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+}
+
+pre {
+  background: $border-color;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  overflow-x: auto;
+}
+
+/* Header */
+header {
+  background: $primary-color;
+  padding: 1rem;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+/* Footer */
+footer {
+  background: darken($primary-color, 10%);
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header, footer {
+    text-align: center;
+  }
+}
 
